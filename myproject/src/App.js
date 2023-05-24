@@ -87,11 +87,38 @@ const projectsList = [
 
 
 class  App extends Component{
-
+  state ={isActive:tabsList[0].tabId}
+  onButtonCkick=tabId=>{
+    this.setState({isActive:tabId})
+  }
   render(){
+    const {isActive} = this.state
+    const filterProjectList = projectsList.filter(each=>(
+      each.category===isActive
+    ))
   return (
     <div className="app-container">
     <Header />
+    <h1 className="title">Projects</h1>
+        <p className="description">
+          Your skills and achievements showcase your strengths and abilities.
+          Speak about any new skills or software you learnt to perform the
+          project responsibilities.
+        </p>
+        <ul className="tab-items-container">
+        {tabsList.map(each=>(
+          <TabItem tabList ={each} key={each.tabId} onButtonCkick={this.onButtonCkick} activeButton={isActive===each.tabId}/>
+        ))}
+        </ul>
+
+        <ul className="project-item-container">
+          {
+            filterProjectList.map(each=>(
+              <ProjectItem projectList={each} key={each.projectId}/>
+            ))
+          }
+
+        </ul>
     </div>
   )
 }

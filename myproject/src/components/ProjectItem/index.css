@@ -1,0 +1,28 @@
+.card-container{
+      background-color: #ffffff;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.06);
+      max-width:320px;
+      display: flex;
+      flex-direction: column;
+      margin: 15px;
+      border-radius: 12px;
+      
+}
+.custom-image{
+      width: 100%;
+      border-radius: 5px;
+}
+.project-content-container{
+      padding: 30px 20px 30px 20px;
+}
+.project-title{
+      font-family: "roboto";
+      font-size: 25px;
+      font-weight: 600;
+      color: #183b56;
+}
+.project-disciption{
+      font-family: "roboto";
+      font-size: 18px;
+      color: #7b8794;
+}
