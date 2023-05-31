@@ -7,16 +7,17 @@ const Header = ()=>{
             <div className='navbar-logo'>GGR</div>
             <ul className='nav-menu'>
             <li>
-                  <img src="https://assets.ccbp.in/frontend/react-js/projects-linkedin-img.png"
-            alt="Linked In" className='nav-images'/>
+            <a href="https://www.linkedin.com/in/ganesh-gajarla/" rel="noreferrer"  target="_blank">
+                  <img src="https://assets.ccbp.in/frontend/react-js/projects-linkedin-img.png" alt="Linked In" className='nav-images'/>
+            </a>
             </li>  
             <li>
-                  <img  src="https://assets.ccbp.in/frontend/react-js/projects-github-img.png"
-            alt="Git Hub" className='nav-images'/>
+            <a href="https://github.com/Ganesh651" rel="noreferrer"  target="_blank">
+                  <img  src="https://assets.ccbp.in/frontend/react-js/projects-github-img.png" alt="Git Hub" className='nav-images'/>
+            </a>
             </li> 
             <li>
-                  <img  src="https://assets.ccbp.in/frontend/react-js/projects-twitter-img.png"
-            alt="Twitter" className='nav-images'/>
+                  <img alt="Twitter" className='nav-images' src="https://assets.ccbp.in/frontend/react-js/projects-twitter-img.png" />
             </li>  
             
             </ul>
